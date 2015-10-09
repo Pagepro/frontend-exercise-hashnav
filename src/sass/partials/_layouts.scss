@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Layouts
+   ========================================================================== */
+.l-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    padding: 2px 0;
+    background-color: $color_white;
+    border-bottom: 1px solid $color_default;
+    &__inner {
+        @extend %helper--inner;
+        overflow: hidden;
+    }
+}
+.l-content {
+    padding-top: 100px;
+    &__inner {
+        @extend %helper--inner;
+    }
+}
